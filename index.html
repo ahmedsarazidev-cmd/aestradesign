@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="aestradesign — Expert web development, modern UI/UX, and responsive full-stack solutions for brands seeking digital excellence.">
+    <meta name="theme-color" content="#050505">
+    <meta property="og:title" content="aestradesign | Web Development">
+    <meta property="og:description" content="Expert Web Development for scalable, high-performance digital products. Available in English and German.">
+    <meta property="og:image" content="/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <title>aestradesign | Web Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" integrity="sha384-oi0D7XG..." crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("DCusAV7NB7GpWb4oe");  // Replace with your actual public key
+       })();
+    </script>
+</head>
+<body>
+
+    <noscript>
+        <div data-en="JavaScript is disabled. The page works with limited functionality, please enable JavaScript for full functionality." data-de="JavaScript ist deaktiviert. Die Seite funktioniert eingeschränkt, bitte aktivieren Sie JavaScript für die volle Funktionalität." style="background:#111;color:#fff;padding:14px;text-align:center;">JavaScript is disabled. The page works with limited functionality, please enable JavaScript for full functionality.</div>
+    </noscript>
+
+    <header id="main-header">
+        <div class="logo">aestra<span>design</span></div>
+        <button class="menu-icon" id="menu-icon" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="nav-menu">
+            <a href="#home" data-en="Home" data-de="Startseite">Home</a>
+            <a href="#about" data-en="About" data-de="Über uns">About</a>
+            <a href="#services" data-en="Services" data-de="Leistungen">Services</a>
+            <a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a>
+            <button id="lang-switch" class="lang-btn">DE</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1 data-en="Expert Web <span>Development</span>" data-de="Experten Web-<span>Entwicklung</span>">Expert Web <span>Development</span></h1>
+            <p data-en="We build high-performance, scalable websites for brands that want to dominate the digital landscape." 
+               data-de="Wir erstellen leistungsstarke, skalierbare Websites für Marken, die die digitale Landschaft dominieren wollen.">
+               We build high-performance, scalable websites for brands that want to dominate the digital landscape.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact"><button class="btn btn-primary" data-en="Contact Us" data-de="Kontakt">Contact Us</button></a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title" data-en="About Us" data-de="Über Uns">About Us</h2>
+            <p class="section-sub" data-en="Digital architects for the modern web" data-de="Digitale Architekten für das moderne Web">Digital architects for the modern web</p>
+            <p class="about-text" data-en="At aestradesign, we specialize in technical excellence. We transform complex ideas into seamless, high-performance digital experiences." 
+               data-de="Bei aestradesign spezialisieren wir uns auf technische Exzellenz. Wir verwandeln komplexe Ideen in nahtlose, leistungsstarke digitale Erlebnisse.">
+                At aestradesign, we specialize in technical excellence. We transform complex ideas into seamless, high-performance digital experiences.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2 class="section-title" data-en="Our Focus" data-de="Unser Fokus">Our Focus</h2>
+            <p class="section-sub" data-en="Core expertise" data-de="Kernkompetenz">Core expertise</p>
+            <div class="services-container">
+                <div class="service-card featured">
+                    <h3 data-en="Full-Stack Web Development" data-de="Full-Stack Webentwicklung">Full-Stack Web Development</h3>
+                    <p data-en="From custom web applications to responsive landing pages, we build fast, secure, and scalable solutions tailored to your business needs." 
+                       data-de="Von maßgeschneiderten Webanwendungen bis hin zu responsiven Landingpages bauen wir schnelle, sichere und skalierbare Lösungen.">
+                       From custom web applications to responsive landing pages, we build fast, secure, and scalable solutions tailored to your business needs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title" data-en="Contact Us" data-de="Kontaktieren Sie uns">Contact Us</h2>
+            <form id="contact-form" class="contact-box" novalidate>
+                <label for="user_name" data-en="Name" data-de="Name">Name</label>
+                <input id="user_name" type="text" name="user_name" placeholder="Your Name" data-en-ph="Your Name" data-de-ph="Ihr Name" required>
+                <label for="user_email" data-en="Email" data-de="E-Mail">Email</label>
+                <input id="user_email" type="email" name="user_email" placeholder="Email Address" data-en-ph="Email Address" data-de-ph="E-Mail-Adresse" required>
+                <label for="message" data-en="Message" data-de="Nachricht">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" data-en-ph="Tell us about your project" data-de-ph="Erzählen Sie uns von Ihrem Projekt" required></textarea>
+                <button type="submit" class="btn btn-primary" data-en="Send Message" data-de="Nachricht senden">Send Message</button>
+                <p id="form-status" aria-live="polite" style="margin-top:12px;min-height:1em;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p data-en="© 2026 aestradesign — Web Development Studio" data-de="© 2026 aestradesign — Webentwicklungs-Studio">© 2026 aestradesign — Web Development Studio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
